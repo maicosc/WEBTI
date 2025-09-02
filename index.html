@@ -33,15 +33,17 @@
 
             font-size: 36px;
         }
-        #titulo{
+        #box-titulo{
 
             vertical-align: top;
             text-align: center;
             align-items: center;
             background-color: aliceblue;
+            justify-content: center;
             align-content: center;
             padding: 0px 0px 0px 0px;
             margin: 0;
+            height: 30vh;
             display:inline-flexbox;
             
            
@@ -53,10 +55,22 @@
 
             vertical-align: top;
         }
-        h1{  
+       h1{  
             position: relative;
-            top:0px;
-            animation: descer 1s   none 0s infinite;
+            color: red;
+            top: 0px;
+            font-size: 27px;
+            animation: rodar 10s   none 0s infinite;
+        }
+
+        @keyframes rodar{
+
+            0%{
+
+            }
+            100%{
+                transform: rotate(360deg) translate(-5%, -5%);
+            }
         }
 
         
@@ -64,7 +78,7 @@
 </head>
 <body>
     
-    <div id="titulo">
+    <div id="box-titulo">
         <h1>WEB</h1>
     </div>
      
