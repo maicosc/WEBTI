@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bloco1{
+            background-color: blue;
+            
+        }
+        .bloco2{
+            background-color: green;
+            
+        }
+        .bloco3{
+            background-color: red;
+          
+        }
+        .bloco4{
+            background-color: yellow;
+            
+        }
+        .bloco1,.bloco2,.bloco3,.bloco4{
+
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 38px;
+        }
+        .Container{
+            display: flex;
+            flex-direction: column;
+
+            /*A direção do flex está em coluna. Assim, o elementos ficarão um embaixo do outro.Além disso, como os elementos estão dentro de um Container flex, preencherão toda área de inicio e término do column, ou seja, toda a largura do container que no caso é 100% da página. Isso ocorre, pois o align-items do Container flex vem por padrão como scretch, configuração que dá os comportamentos descritos acima aos elementos dentro do container.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="bloco1">1</div>
+        <div class="bloco2">2</div>
+        <div class="bloco3">3</div>
+        <div class="bloco4">4</div>
+    </div>
+</body>
+</html>

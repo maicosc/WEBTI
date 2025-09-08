@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Parte1{
+            position: absolute;
+            width: 30vw;
+            top: 0;
+            height: 100vh;
+            background-color: #444c55;
+            display: flex;
+            float: left;
+            flex-direction: column;
+            left: 0;
+            
+        }
+        img{
+            height: 35vh;
+            width: 25vw;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 1vh;
+            left: 3vw;
+            border-radius: 50%;
+        }
+        .Parte1> h2{
+
+            position: relative;
+            color: white;
+            left: 2vw;
+            margin-bottom: 0;;
+           
+        }
+        .Parte1>span{
+            position: relative;
+            color: white;
+            left: 2vw;
+        }
+        #linha{
+
+            display: flex;
+            color: white;
+            font-size: 21px;
+            justify-content: end;
+
+        }
+        .Parte2{
+
+            position: absolute;
+            display: flex;
+            height: 100vh;
+            top: 0;
+            left:30vw;
+            width: auto;
+            flex-direction: column;
+
+        }
+        h1{
+
+            position: relative;
+            left: 2vw;
+            font-size: 48px;
+            margin-bottom: 1vw;
+        }
+        .linha-parte2{
+
+            font-size: 21px;
+            margin-left: 1vw;
+        }
+        .linha-parte2+p{
+            font-size: 21px;
+            position: relative;
+            color: rgb(100, 99, 99);
+            left: 2vw;
+            margin-bottom: 0;
+        }
+        .linha-parte2~h2{
+
+            position: relative;
+            font-size: 27px;
+            font-weight: bold;
+            left: 2vw;
+            margin-bottom: 0;
+        }
+        .data{           
+            margin-top: 2vw;
+            margin-left: 0;
+            
+        }
+        
+        .container+p{
+            position: relative;
+            margin-top: -4vh;
+            left: 2vw;
+            margin-bottom: 0;
+            font-style: italic;
+            font-size: 18px;
+        }
+        .ocupacoes>li{
+            position: relative;
+            color: rgb(67, 67, 67);
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 2vw;
+        }
+        .carreira{
+            margin-top: 2vw;
+            margin-left: 2vw;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 24px;
+            color: black;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="Parte1"> <img src="Foto.png" alt="Foto de Perfil"> <h2>Pessoal</h2><span id="linha">____________________________________ <br></span>
+    <h2>Nome</h2><span>Joana Barbosa</span>
+    <h2>Endereço</h2><span>Rua da Paz, 250 <br> 7100-011 Lisboa</span>
+    <h2>Número de Telefone</h2><span>9630002121</span>
+    <h2>Email</h2><span>exemplos@cvmaker.pt</span>
+    <h2>Interesses</h2><span><ul><li>Marketing</li> <li>Planilhas</li></ul></span>
+    <div class="Parte2">
+        <h1>Joana Barbosa</h1>
+        <span class="linha-parte2">________________________________________________________________________________</span>
+        <p>Uma marketer digital com sentido de missão e com mais de três anos de experiência em <br>conduzir iniciativas promocionais. Sou uma especialista em online marketing, lead <br>generation e nurturing. Tenho uma comunicação exemplar, aptidões interpessoais e <br>trabalho bem sobre pressão de forma a atingir os objetivos.</p>
+        <h2>Experiência Profissional</h2>
+        <span class="linha-parte2">________________________________________________________________________________</span>
+
+        <div class="container">
+            <p class="carreira">Junior SEO Marketer</p>
+            <p class="data">2017-2019</p>
+        </div>
+        <p>Cyanca, Lisboa</p>
+        <ul class="ocupacoes">
+            <li>Página on/off SEO</li>
+            <li>Estratégias de linkbuilding</li>
+            <li>Criação de conteúdo relevante</li>
+            <li>Trabalho com ferramentas online: Ahrefs, Google Analytics, Google Search Console, Google Adwords</li>
+        </ul>
+        <div class="container">
+            <p class="carreira">Assistente de Vendas</p>
+            <p class="data">2015-2016</p>
+        </div>
+        <p>Salsa, Lisboa</p>
+        <ul class="ocupacoes">
+            <li>Contribuição para os objetivos de vendas</li>
+            <li>Gestão de inventário</li>
+            <li>Apoio a clientes</li>
+        </ul>
+    </div>
+</body>
+</html>
