@@ -5,11 +5,11 @@
       /*regra 1*/ li{color:red;}/* Aqui foi selecionado todos os elementos <li> */
       /*regra 2*/ .churras{color:green;} /*Aqui foi trocada a cor de todos os elementos que tem a classe churras*/
       /*regra 3*/ .fruta{color:gray}/*Aqui foi trocada a cor de todos os elementos que tem a classe fruta*/
-      /*regra 4*/ li+li.churras{color: black;}/*Aqui foi trocada a cor do primeiro elemento <li> com classe churras que vem depois de um elemento <li>*/
-      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
-      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
-      /*regra 7*/ #lip3.fruta{color:orange}
-      /*regra 8*/ ol>li.churras#lip5{color:purple}
+      /*regra 4*/ li+li.churras{color: black;}/*Aqui foi trocada a cor de um elemento <li> com classe churras e que venha imediatamente após um elemento <li>*/
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;} /*Aqui os elementos com a classe churras e que tem configuração draggable tiveram sua cor trocada para magenta*/
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue} /*Aqui os elementos com id lip1, lip2 e lip3 tiveram sua cor trocada para azul*/
+      /*regra 7*/ #lip3.fruta{color:orange}/*Aqui os elementos com id lip3 e classe fruta tiveram sua cor trocada para laranja*/
+      /*regra 8*/ ol>li.churras#lip5{color:purple}/*Aqui foi usada um seletor de combinação que aplicar a cor púrpura nos elementos li que são filhos de um elemento ol e tem a classe churras e o id lip5*/
    </style>
 </head>
 <body>   
