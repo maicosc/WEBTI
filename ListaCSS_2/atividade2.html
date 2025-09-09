@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            outline: none;
+            width: 30vw;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100vh;
+            background-color: blueviolet;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+        .painel{
+            height: 99.5%;
+            width: 98%;
+            border-radius: 1%;
+            position: absolute;
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+
+        }
+        .box{
+            background-color: gray;
+        }
+        #circulo{
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            align-self: center;
+            position: relative;
+            justify-self: end
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="painel">
+            <h1></h1>
+            <div class="box" id="linha1"></div>
+            <div class="box" id="linha2"></div>
+            <div class="box" id="linha3"></div>
+            <div class="box" id="linha4"></div>
+            <div class="box" id="circulo"></div>
+            <div class="box" id="linha5"></div>
+        </div>
+    </div>
+</body>
+</html>
