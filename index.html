@@ -8,23 +8,46 @@
     <style>
        
        .container{
-        outline-offset: 0;
+        outline: none
+         border: 1px solid blue;
         display: flex;
         flex-direction: column;
+        height: 100%;
+        width: 100vw;
        }
        #box-titulo{
         width: 60vw;
-        height: 20vh;
-        position: fixed;
+        height: 10vh;
+        position: absolute;
         display: flex;
         flex-direction: row;
         justify-content: center;
         background-color: cadetblue;
-        border-bottom-left-radius: 30%;
-        top: 2vh;
+        border-radius: 0 0 50% 50%;
+        top: 1vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        order: 1;
        }
         #box-links{
 
+           
+            order: 2;
+            outline: none;
+            position:absolute;
+            display: flex;
+            border: 1px solid red;
+            height: 88vh;
+            width: 99vw;
+            top: 11vh;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        a{
+            align-self: center;
+            margin-left: 5vw;
         }
         
     </style>
@@ -41,7 +64,7 @@
             <a href="pagina1.html"><b>Página 1 - GIT</b></a>
             <a href="pagina2.html"><b>Página 2 - HTML </b></a>
             <a href="pagina3.html"><b>Página 3 - CSS</b></a>
-            <a href="exemplo.html">oi</a>
+            <a href="exemplo.html"><b>oi</b></a>
         </div>
 
     </div>
