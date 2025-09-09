@@ -7,88 +7,45 @@
     <link rel="shortcut icon" type = "image/png" href="hipogrifo.ico">
     <style>
        
-        #links{
-            text-align: center;
-            margin: 1px 1px 1px 1px;
-            background-color: blanchedalmond;
-            width: fit-content;
-            height: 60px;
-            align-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            align-items: center;
-            display: flex;
-            border-radius: 50%;
-            
-            
-        }
-        #links a{
-            padding: 0px 30px 0px 30px;
-            color: black;
-            text-decoration: none;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
-        }
-        #links a:hover{
+       .container{
+        outline-offset: 0;
+        display: flex;
+        flex-direction: column;
+       }
+       #box-titulo{
+        width: 60vw;
+        height: 20vh;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: cadetblue;
+        border-bottom-left-radius: 30%;
+        top: 2vh;
+       }
+        #box-links{
 
-            font-size: 36px;
         }
-        #box-titulo{
-
-            vertical-align: top;
-            text-align: center;
-            align-items: center;
-            background-color: aliceblue;
-            justify-content: center;
-            align-content: center;
-            padding: 0px 0px 0px 0px;
-            margin: 0;
-            height: 30vh;
-            display:inline-flexbox;
-            
-           
-        }
-        body{
-            background-color: cadetblue;
-        }
-        div{
-
-            vertical-align: top;
-        }
-       h1{  
-            position: relative;
-            color: red;
-            top: 0px;
-            font-size: 27px;
-            animation: rodar 10s   none 0s infinite;
-        }
-
-        @keyframes rodar{
-
-            0%{
-
-            }
-            100%{
-                transform: rotate(360deg) translate(-5%, -5%);
-            }
-        }
-
         
     </style>
 </head>
 <body>
-    
-    <div id="box-titulo">
-        <h1>WEB</h1>
-    </div>
+    <div class="container">
+
+        <div id="box-titulo">
+            <h1>WEB</h1>
+        </div>
      
 
-     <div id="links">
-        <a href="pagina1.html"><b>Página 1 - GIT</b></a>
-        <a href="pagina2.html"><b>Página 2 - HTML </b></a>
-        <a href="pagina3.html"><b>Página 3 - CSS</b></a>
-        <a href="exemplo.html">oi</a>
+        <div id="box-links">
+            <a href="pagina1.html"><b>Página 1 - GIT</b></a>
+            <a href="pagina2.html"><b>Página 2 - HTML </b></a>
+            <a href="pagina3.html"><b>Página 3 - CSS</b></a>
+            <a href="exemplo.html">oi</a>
+        </div>
+
     </div>
+    
      
 
 </body>
