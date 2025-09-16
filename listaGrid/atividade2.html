@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: fixed;
+            top:0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            background-color: white;
+            grid-template-columns: 20fr 40fr;
+            grid-template-rows: 20vh 60vh 20vh;
+            grid-template-areas: 
+            "header header"
+            "nav conten"
+            "nav footer";
+        }
+        #caixinha1{
+            background-color: purple;
+            grid-area: header;
+        }
+        #caixinha2{
+            background-color: lightgreen;
+            grid-area: nav;
+        }
+        #caixinha3{
+            background-color: salmon;
+            grid-area: conten;
+        }
+        #caixinha4{
+            background-color: green;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="caixinha1">1</div>
+        <div class="box" id="caixinha2">2</div>
+        <div class="box" id="caixinha3">3</div>
+        <div class="box" id="caixinha4">4</div>
+    </div>
+    
+</body>
+</html>
