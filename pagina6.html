@@ -8,19 +8,21 @@
         *{border: 1px solid black; box-sizing: border-box;}
         body{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 6fr 3fr 6fr;
+          /**  grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 6fr 5fr 6fr; **/
             grid-template-areas: 
-            "header header header"
-            "main main sidebar";
+            "header header header header"
+            "main main . sidebar"
+            "footer footer footer footer";
         }
         #caixinha1{background-color: yellow;
         grid-area: header;}
-        #caixinha2{background-color: orange;}
-        #caixinha3{background-color: lightgreen;}
-        #caixinha4{background-color: lightblue;}
-        #caixinha5{background-color: violet;}
-        #caixinha6{background-color: purple; }
+        #caixinha2{background-color: orange;
+        grid-area: main;}
+        #caixinha3{background-color: lightgreen;
+        grid-area: sidebar;}
+        #caixinha4{background-color: lightblue;grid-area: footer;}
+       
     </style>
 </head>
 <body>
@@ -28,7 +30,6 @@
     <div class="box" id="caixinha2">2</div>
     <div class="box" id="caixinha3">3</div>
     <div class="box" id="caixinha4">4</div>
-    <div class="box" id="caixinha5">5</div>
-    <div class="box" id="caixinha6">6</div>
+
 </body>
 </html>
