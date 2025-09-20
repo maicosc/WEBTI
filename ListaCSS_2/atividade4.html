@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+        }
+        .box{
+            display: flex;
+            position: relative;
+            height: 50vh;
+            width: 5vw;
+            background-color: black;
+            border-radius: 3rem;
+            top: 5rem;
+            left: 2rem;
+            justify-content: center;
+            margin: 1rem 1rem 1rem 1rem;
+            background-repeat: no-repeat;
+        }
+        .icon{
+            position: relative;
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 100%;
+            background-color: aliceblue;
+            align-self: flex-end;
+            bottom: 1rem;
+            
+            
+        }
+        p{
+            position: relative;
+            
+            color: aliceblue;
+            align-self: flex-end;
+            bottom: 1rem;
+            display:none;
+            visibility: hidden;
+            
+        }
+        #box1{
+            background-image: url(vera.jpg);
+            
+        }
+        #box2{
+            background-image: url(outn.jpg);
+        }
+        #box3{
+            background-image: url(inve.png);
+        }
+        #box4{
+            background-image: url(prim.jpg);
+        }
+        
+        .box:hover{
+
+            width: 33vw;
+            justify-content: flex-start;
+            .icon{
+                left: 2rem;
+                
+                
+            }
+            p{
+                display: block;
+                visibility: visible;
+                margin-left: 3rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="box" id="box1">
+            <img src="icon-vera.png" class="icon"/>
+            <p><b>Verão</b> <br>22 de dez até 21 de mar</p>
+        </div>
+        <div class="box" id="box2">
+            <img src="icon-outo.png" class="icon"/>
+            <p><b>Outono</b><br>22 de mar até 21 de jun</p>
+        </div>
+        <div class="box" id="box3">
+            <img src="icon-inve.png" class="icon"/>
+            <p><b>Inverno</b> <br>22 de jun até 21 de set</p>
+        </div>
+        <div class="box" id="box4">
+            <img src="icon-prim.png" class="icon"/>
+            <p><b>Primavera</b> <br>22 de set até 21 de dez</p>
+        </div>
+    </div>
+</body>
+</html>

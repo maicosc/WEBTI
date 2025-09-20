@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            outline: none;
+            width: 30vw;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100vh;
+            background-color: blueviolet;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+        .painel{
+            height: 99.5%;
+            width: 98%;
+            border-radius: 1%;
+            position: absolute;
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .box{
+            background-color: rgb(196, 193, 193);
+        }
+        #circulo{
+            height: 12vh;
+            width: 7vw;
+            border-radius: 100%;
+            top: 23%;
+            position: relative;
+        }
+        #linha5{
+            height: 5vh;
+            width: 12vw;
+            position: relative;
+            bottom: 10%;
+        }
+        #linhas>.box{
+
+            position: relative;
+            height: 4vh;
+            width: 25vw;
+            margin-bottom: 1rem;
+
+        }
+        #linhas{
+            position: absolute;
+            top: 25%;
+            display: flex;
+            flex-flow: column wrap;
+             flex-shrink: 2;
+            
+        }
+        h1{
+            position: relative;
+            top: 5%;
+            color: rgb(196, 193, 193);
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="painel">
+            <h1>Company Logo</h1>
+            <div id="linhas">
+                <div class="box" id="linha1"></div>
+                <div class="box" id="linha2"></div>
+                <div class="box" id="linha3"></div>
+                <div class="box" id="linha4"></div>
+            </div>
+            <div class="box" id="circulo" ></div>
+            <div class="box" id="linha5"></div>
+        </div>
+    </div>
+</body>
+</html>

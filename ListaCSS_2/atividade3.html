@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #636060;
+        }
+        .painel{
+            position: relative;
+            width: 30%;
+            height: 50%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+
+        }
+        .box-perfil{
+            position: relative;
+            width: 100%;
+            height: 25%;
+            display: flex;
+            background-color: #FFFFFF;
+        }
+        .foto{
+            position: relative;
+            display: flex;
+            height: 72%;
+            width: 15%;
+            background-color: black;
+            border-radius: 100%;
+            left: 1rem;
+            margin: 1rem 1rem 1rem 1rem;
+        }
+        span{
+            background-color: #FFFFFF;
+            display: flex;
+            position: relative;
+            align-self: center;
+        }
+        p{
+            position: relative;
+            margin-left: 1rem;
+            margin-top: 2rem;
+            font-weight: bold;
+        }
+        span{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="painel">
+            <div class="box-perfil" id="bp1">
+            <img src="p3.jpg" class="foto"/>
+            <p class="texto" id="t1">Linda Hart <br><span>6765 Shady Ln Dr</span> </p>
+        </div>
+        <span>______________________________________</span>
+        <div class="box-perfil" id="bp2">
+            <img src="p2.jpg" class="foto"/>
+            <p class="texto" id="t1">Roger Medina <br><span>2420 Paddock Way</span> </p>
+        </div>
+        <span>______________________________________</span>
+        <div class="box-perfil" id="bp3">
+            <img src="p1.jpg" class="foto"/>
+            <p class="texto" id="t1">Dean Sullivan <br><span>6727 Airplane Ave</span> </p>
+        </div>
+        <span>______________________________________</span>
+        <div class="box-perfil" id="bp4">
+            <img src="p4.jpg" class="foto"/>
+            <p class="texto" id="t1">Elizabeth Austin <br><span>6685 Blossom Hill Rd</span> </p>
+            
+        </div>
+        </div>
+    </div>
+</body>
+</html>
