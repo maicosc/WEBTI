@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media screen and (min-width: 916vw) and (min-height: 873vh) {
+            body{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 10fr 10fr 60fr 10fr 10fr;
+            grid-template-columns: 10fr 70fr 10fr;
+            grid-template-areas: "header header header"
+            "leftaside banner rightaside"
+            "leftaside maincontent rightaside"
+            "leftaside lowcontent rightaside"
+            "footer footer footer";
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+        }
+        @media screen and (min-width: 437vw) and (min-height: 873vh) and (max-width:916vw) {
+            body{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 10fr 10fr 10fr 40fr 10fr 10fr 10fr;
+            
+            grid-template-areas: "header"
+            "banner"
+            "leftaside"
+            "maincontent"
+            "rightaside"
+            "lowcontent"
+            "footer";
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+        }
+        
+        
+        .box{
+            position: relative;
+            
+            
+        }
+        #box1{
+            background-color: yellow;
+            grid-area: header;
+        }
+        #box2{
+            background-color: red;
+            grid-area: banner;
+        }
+        #box3{
+            background-color: green;
+            grid-area: leftaside;
+        }
+        #box4{
+            background-color: yellow;
+            grid-area: rightaside;
+        }
+        #box5{
+            background-color: blue;
+            grid-area: maincontent;
+        }
+        #box6{
+            background-color: green;
+            grid-area: lowcontent;
+        }
+        #box7{
+            background-color: blue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">oi</div>
+    <div class="box" id="box2">ola</div>
+    <div class="box" id="box3">priviet</div>
+    <div class="box" id="box4">alo</div>
+    <div class="box" id="box5">aoi</div>
+    <div class="box" id="box6">ei</div>
+    <div class="box" id="box7">opa</div>
+</body>
+</html>
