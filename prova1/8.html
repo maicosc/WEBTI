@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
 
-        
-        body{
+        @media screen and (min-width: 916vw) and (min-height: 873vh) {
+            body{
             display: grid;
             width: 100vw;
             height: 100vh;
@@ -21,6 +21,27 @@
             row-gap: 1rem;
             column-gap: 1rem;
         }
+        }
+        @media screen and (min-width: 437vw) and (min-height: 873vh) and (max-width:916vw) {
+            body{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 10fr 10fr 10fr 40fr 10fr 10fr 10fr;
+            
+            grid-template-areas: "header"
+            "banner"
+            "leftaside"
+            "maincontent"
+            "rightaside"
+            "lowcontent"
+            "footer";
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+        }
+        
+        
         .box{
             position: relative;
             
