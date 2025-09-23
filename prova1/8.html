@@ -6,40 +6,8 @@
     <title>Document</title>
     <style>
 
-        @media screen and (min-width: 916vw) and (min-height: 873vh) {
-            body{
-            display: grid;
-            width: 100vw;
-            height: 100vh;
-            grid-template-rows: 10fr 10fr 60fr 10fr 10fr;
-            grid-template-columns: 10fr 70fr 10fr;
-            grid-template-areas: "header header header"
-            "leftaside banner rightaside"
-            "leftaside maincontent rightaside"
-            "leftaside lowcontent rightaside"
-            "footer footer footer";
-            row-gap: 1rem;
-            column-gap: 1rem;
-        }
-        }
-        @media screen and (min-width: 437vw) and (min-height: 873vh) and (max-width:916vw) {
-            body{
-            display: grid;
-            width: 100vw;
-            height: 100vh;
-            grid-template-rows: 10fr 10fr 10fr 40fr 10fr 10fr 10fr;
-            
-            grid-template-areas: "header"
-            "banner"
-            "leftaside"
-            "maincontent"
-            "rightaside"
-            "lowcontent"
-            "footer";
-            row-gap: 1rem;
-            
-        }
-        }
+        
+        
         
         
         .box{
@@ -74,6 +42,40 @@
         #box7{
             background-color: blue;
             grid-area: footer;
+        }
+        @media screen and (max-width: 916vw) and (max-height: 873vh) {
+            body{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 10fr 10fr 60fr 10fr 10fr;
+            grid-template-columns: 10fr 70fr 10fr;
+            grid-template-areas: "header header header"
+            "leftaside banner rightaside"
+            "leftaside maincontent rightaside"
+            "leftaside lowcontent rightaside"
+            "footer footer footer";
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+        }
+        @media screen and (max-height: 873vh) and (max-width:437vw){
+            body{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            grid-template-rows: 10fr 10fr 10fr 40fr 10fr 10fr 10fr;
+            
+            grid-template-areas: "header"
+            "banner"
+            "leftaside"
+            "maincontent"
+            "rightaside"
+            "lowcontent"
+            "footer";
+            row-gap: 1rem;
+            
+        }
         }
     </style>
 </head>
