@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-rows: 33fr 33fr 33fr;
+            grid-template-areas: "pais1 pais2 pais3";
+            justify-content: space-around;
+           
+            
+        }
+        .bandeiras{
+            position: relative;
+            width: 25vw;
+            height: 30vh;
+            border: solid 1px black;
+            top: 1rem;
+        }
+        #bandeira1{
+            grid-area: "pais1";
+        }
+        #bandeira2{
+            grid-area: "pais2";
+            
+        }
+        #bandeira2>.divisao{
+            width: 100%;
+            height: 33.33%;
+            position: absolute;
+        }
+        #bandeira2>#divisao1{
+            
+            background-color: red;
+            top: 0;
+        }
+        #bandeira2>#divisao2{
+            background-color: blue;
+            bottom: 0;
+        }
+
+        #bandeira3{
+            grid-area: "pais3";
+            
+        }
+        #bandeira3>.divisao{
+            width: 33.33%;
+            height: 100%;
+            position: absolute;
+        }
+        #bandeira3>#divisao1{
+            
+            background-color: green;
+            left: 0;
+        }
+        #bandeira3>#divisao2{
+            background-color: red;
+            right: 0;
+        }
+       
+        #circulo{
+            position: absolute;
+            border-radius: 100%;
+            width: 20%;
+            height: 30%;
+            background-color: red;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bandeiras" id="bandeira1">
+        <div id="circulo"></div>
+    </div>
+    <div class="bandeiras" id="bandeira2">
+        <div class="divisao" id="divisao1"></div>
+        <div class="divisao" id="divisao2"></div>
+    </div>
+    <div class="bandeiras" id="bandeira3">
+        <div class="divisao" id="divisao1"></div>
+        <div class="divisao" id="divisao2"></div>
+    </div>
+</body>
+</html>
