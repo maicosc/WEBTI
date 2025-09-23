@@ -5,49 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        
         body{
             display: grid;
             width: 100vw;
             height: 100vh;
-            grid-template-rows: 15fr 70fr 15fr;
-            grid-template-columns: 10fr 26.66fr 26.66fr 26.66fr 10fr;
-            grid-template-areas: "header header header",
-            "leftaside banner rightaside",
-            "leftaside maincontent rightaside",
-            "leftaside lowcontent rightaside",
+            grid-template-rows: 10fr 10fr 60fr 10fr 10fr;
+            grid-template-columns: 10fr 70fr 10fr;
+            grid-template-areas: "header header header"
+            "leftaside banner rightaside"
+            "leftaside maincontent rightaside"
+            "leftaside lowcontent rightaside"
             "footer footer footer";
+            row-gap: 1rem;
+            column-gap: 1rem;
         }
         .box{
             position: relative;
             
+            
         }
         #box1{
             background-color: yellow;
-            grid-area: "header";
+            grid-area: header;
         }
         #box2{
             background-color: red;
-            grid-area: "banner";
+            grid-area: banner;
         }
         #box3{
             background-color: green;
-            grid-area: "leftaside";
+            grid-area: leftaside;
         }
         #box4{
             background-color: yellow;
-            grid-area: "rightaside";
+            grid-area: rightaside;
         }
         #box5{
             background-color: blue;
-            grid-area: "maincontent";
+            grid-area: maincontent;
         }
         #box6{
             background-color: green;
-            grid-area: "lowcontent";
+            grid-area: lowcontent;
         }
         #box7{
             background-color: blue;
-            grid-area: "footer";
+            grid-area: footer;
         }
     </style>
 </head>
