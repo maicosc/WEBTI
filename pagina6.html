@@ -10,6 +10,18 @@
         //Código Js
         //alert("Olá meus amores")
         var i=0
+        const potencia = (num, expoente) => {
+
+            let resultado = num
+            if(expoente === 0){
+                return 1
+            }
+            for (let a= 1; a < expoente; a++){
+                
+                resultado=resultado*num
+            }
+            return resultado
+        }
         console.log(i)
         console.log( typeof(i))
        
@@ -40,9 +52,10 @@
         body.style.flexDirection = "column"
         body.style.justifyContent = "center"
         body.style.alignItems = "center"
-
+        var cont=0
         butao.addEventListener("click",()=>{
-            p.innerText = "bla"
+            cont++
+            praf.innerText = potencia(2, cont)
         })
         
     </script>

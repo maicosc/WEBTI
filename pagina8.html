@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroPrafs = prompt("Digite a quantidade de parágrafos")
+        numeroPrafs = parseInt(numeroPrafs)
+        const corpo = document.body
+        for(let i=0; i< numeroPrafs; i++){
+            let p = document.createElement('p');
+            p.innerText = (i+1);
+            p.style.border = "1px solid black"
+            corpo.appendChild(p)
+        }
+        corpo.style.display = "flex"
+        corpo.style.flexDirection = "row"
+        corpo.style.flexWrap = "wrap"
+        corpo.style.alignItems = "center"
+    </script>
+</body>
+</html>
