@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input{
+            width: 20vw;
+        }
+        li{
+            display: flex;
+            border: 1px solid black;
+            width: 10vw;
+            justify-content: center;
+        }
+        ul{
+            position: relative;
+            right: 1rem;
+            list-style-type: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sorteio de Números</h1>
+
+    <input type="number" placeholder="Digite o mínimo (Por padrão é 1)" id="min">
+    <input type="number" placeholder="Digite o máximo (Por padrão é 100)" id="max">
+
+    <button id="sortear" onclick="Sortear()"> SORTEAR </button>
+
+    <p id="resultado"></p>
+
+    <div id="conatiner-lista">
+        <ul id="lista">
+        </ul>
+    </div>
+    
+    <script>
+        
+        var listaResults = []
+        function Sortear(){
+            let campoMin = document.getElementById("min")
+            let campoMax = document.getElementById("max")
+            let lista = document.getElementById("lista")
+            let min = parseInt(campoMin.value)
+            let max = parseInt(campoMax.value)
+            let item = document.createElement("li")
+            let cont = 0
+            var resultado
+            console.log(min)
+            console.log(max)
+
+            if(isNaN(min) && isNaN(max)){
+                resultado = Math.floor(Math.random()*100)+1
+                console.log(resultado)
+
+            
+            }else{
+                resultado = Math.floor(Math.random()*(max-min+1))+min
+                console.log(resultado)
+            }
+            
+            
+            item.textContent = resultado
+            lista.appendChild(item)
+            listaResults.forEach(result => {
+                if(result === resultado){
+                    cont++
+                }
+            })
+            if(cont > 0){
+                if(cont == 1){
+                    document.getElementById("resultado").innerText = `${resultado} (repetiu ${cont} vez)`
+                }else{
+                    document.getElementById("resultado").innerText = `${resultado} (repetiu ${cont} vez(es))`
+                }
+                
+            }else{
+                document.getElementById("resultado").innerText = `${resultado}`
+            }
+            listaResults.push(resultado)
+            
+        }
+    </script>
+</body>
+</html>
