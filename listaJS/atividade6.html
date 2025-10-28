@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        button{
+            width: 10vw;
+            height: 5vh;
+            border-radius: 1rem;
+            background-color: rgb(192, 161, 221);
+        }
+        input{
+            width: 12vw;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="Número inicial do intervalo" id="inicio">
+    <input type="number" placeholder="Número final do intervalo" id="fim">
+    <button id="verificar" onclick="verificaPrimosEmIntervalo()">Verificar Primos</button>
+    <div id="resultadoPrimos" >Números primos encontrados:</div>
+    <script>
+        const ehPrimo = (n) => {
+            let cont=0;
+            for(let i=1; i <= n; i++){
+                if(n == i){
+                    cont++
+                }else if(n !== 0 && i!==0){
+                    if(n%i == 0){
+                        cont++
+                    
+                }
+                }
+                
+            }
+            if(cont == 2){
+                document.getElementById('resultadoPrimos'). innerText += "\n"+n
+            }
+        }
+        function verificaPrimosEmIntervalo(){
+            document.getElementById('resultadoPrimos').innerText = "Números primos encontrados:"
+            let campoIni = document.getElementById('inicio')
+            let campoFim = document.getElementById('fim')
+            let inicio = campoIni.value;
+            let fim = campoFim.value;
+            if(inicio <= fim){
+                for(let i= inicio; i <= fim; i++){
+                    ehPrimo(i);
+                }
+            }else{
+                alert("O valor inicial deve ser menor ou igual ao valor do final")
+                campoIni.innerText = ""
+                campoIni = ""
+                
+            }
+
+        }
+    </script>
+</body>
+</html>
