@@ -32,8 +32,34 @@
     $i = 0;
     while ($i < 10) {
         $i++;
-        echo 'i=' . $i . '-';
+        echo 'i=' . $i . ' - ';
     }
+    ?>
+    <h2>Vetor</h2>
+    <?php
+    $vetor = array(1,2,3,4,5,6,7,8,9,0);
+    for($i = 0; $i < count($vetor); $i++){
+        echo $vetor[$i]."<br>";
+
+    };
+    echo "Foreach<BR>";
+    foreach($vetor as $elemento){
+        echo "Elemento: ".$elemento."<br>";
+    }
+    ?>
+    <h2>Vetor com índice alfabético</h2>
+    <?php
+    $pessoa = array("nome" => "Egô",
+    "sobrenome" => "Ílio Tarso",
+    "CPF" => "111.555.222-98");
+    echo "Nome: ".$pessoa['nome']."<br>";
+    echo "Sobrenome: ". $pessoa['sobrenome']."<br>";
+    echo "CPF: ".$pessoa['CPF']."<BR>";   
+    ?>
+    <h2>Variaveis de ambiente em PHP</h2>
+    <?php
+    echo "Nome: ". $_GET['nome']."<BR>";
+
     ?>
 </body>
 
