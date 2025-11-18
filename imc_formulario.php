@@ -15,6 +15,13 @@
 </head>
 <body >
     <?php
+    session_start();
+    if(isset($_SESSION['username'])){
+        echo "<p>Usuario logado: ". $_SESSION['username'] . "</p>";
+    }else{
+        header("Location: autenticacao_formulario.php?error=nao_autenticado");
+        exit();
+    }
     if(isset($_GET['error'])&& $_GET['error'] == "faltando_dados"){
         echo"<p style= 'color: red;'> Erro: Preencha todos os campos seu cabaço!</p>";
     }
