@@ -1,9 +1,9 @@
 <?php
 function connecta_bd()
 {
-    $servername = "localhost:3307";
+    $servername = "localhost:3312";
     $username = "root";
-    $password = "";
+    $password = '';
     $dbname = "trabalhowebti";
     return new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 }
