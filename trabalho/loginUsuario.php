@@ -28,6 +28,11 @@ session_start();
                 alert("Usuário não encontrado!")
             </script>
         <?php endif; ?>
+        <?php if ($_GET['error'] == 'email_invalido'): ?>
+            <script>
+                alert("O email deve seguir a estrutura 'exemplo@email.com' ou equivalentes!")
+            </script>
+        <?php endif; ?>
     <?php endif; ?>
 
     <h2>Realize o seu login!</h2>

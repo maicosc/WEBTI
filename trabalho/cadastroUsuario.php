@@ -25,6 +25,16 @@
                 alert("Preencha todos os camppos!")
             </script>
         <?php endif; ?>
+        <?php if ($_GET['error'] == 'email_invalido'): ?>
+            <script>
+                alert("O email deve seguir a estrutura 'exemplo@email.com' ou equivalentes!")
+            </script>
+        <?php endif; ?>
+        <?php if ($_GET['error'] == 'email_existente'): ?>
+            <script>
+                alert("Já existe um usuário com esse email!")
+            </script>
+        <?php endif; ?>
     <?php endif; ?>
     <h1>Seja bem-vindo ao Apocalapso <br> <span>Onde sua dor é a nossa felicidade</span> </h1>
     <h2>Realize o seu cadastro!</h2>
@@ -37,9 +47,7 @@
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required><br><br>
             <label for="sorte">Mantra da Sorte:</label>
-            <input type="text" id="sorte" name="sorte"
-                placeholder="Aqui você pode colocar um número, frase, nome,qualquer coisa que você acha que te dará sorte"
-                required><br><br>
+            <input type="text" id="sorte" name="sorte" required><br><br>
             <input type="submit" value="Cadastrar">
         </form>
     </div>

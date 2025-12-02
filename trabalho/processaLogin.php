@@ -11,7 +11,12 @@ $login = $_POST["login"];
 if(strlen($senha) < 5 || strlen($senha) > 12){
     header("Location: loginUsuario.php?error=senha_invalida");
     exit();
-}                      
+}  
+if(!strpos($login, "@"))                 {
+    header("Location: loginUsuario.php?error=email_invalido");
+    exit();
+}
+                   
 $usuarios = get_usuarios();
 
 $existe = false;

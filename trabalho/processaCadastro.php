@@ -9,7 +9,23 @@ $nome = $_POST["nome"];
 $senha = $_POST["senha"]; 
 $login = $_POST["login"];
 $sorte = $_POST["sorte"]; 
-$hash = password_hash($senha, PASSWORD_DEFAULT);
+
+$usuarios = get_usuarios();
+
+$existeEmail = false;
+
+
+foreach($usuarios as $user):
+    if(trim($user['login']) == $login){
+        $existeEmail = true;
+        break;
+    }
+endforeach;
+if($existeEmail){
+    $_SESSION['usuarioId'] = $id;
+    header("Location: cadastroUsuario.php?error=email_existente");
+    exit();
+}
 if(strlen($senha) < 5 || strlen($senha) > 12){
     header("Location: cadastroUsuario.php?error=senha_invalida");
     exit();
@@ -17,7 +33,12 @@ if(strlen($senha) < 5 || strlen($senha) > 12){
 if(strlen($nome) < 3){
     header("Location: cadastroUsuario.php?error=nome_invalido");
     exit();
-}                      
+
+}  
+if(!strpos($login, "@")){
+    header("Location: cadastroUsuario.php?error=email_invalido");
+    exit();
+}   
 cadastraUsuario($nome, $login, $senha,  $sorte);
 header("Location: loginUsuario.php");
     exit();
