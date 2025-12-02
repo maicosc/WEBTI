@@ -15,12 +15,10 @@ if(strlen($senha) < 5 || strlen($senha) > 12){
 $usuarios = get_usuarios();
 
 $existe = false;
-echo "<pre>";
-print_r($usuarios);
-echo "</pre>";
-exit();
+
+
 foreach($usuarios as $user):
-    if($user['login'] == $login && $senha == $user['senha'] ){
+    if(trim($user['login']) == $login && $senha == trim($user['senha']) ){
         $existe = true;
         break;
     }

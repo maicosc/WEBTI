@@ -1,0 +1,43 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f2f;
+    color: aliceblue;
+    height: 90vh;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    position: relative;
+    
+    width: 15vw;
+}
+input[name='nome'],input[name='login']{
+    width: 20vw;
+}
+label {
+    position: relative;
+    
+}
+input[value='Atualizar']{
+    width: 15vw;
+    height: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    background-color: red;
+    color: aliceblue;
+    font-size: 24px;
+}
+h1{
+
+   
+    color: red;
+    
+}

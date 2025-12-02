@@ -29,14 +29,14 @@ function delete_usuario($id)
     return $stmt->execute();
 }
 
-function update_usuario($id, $nome, $login, $senha)
+function update_usuario($id, $nome, $login, $sorte)
 {
     $con = connecta_bd();
-    $stmt = $con->prepare("UPDATE usuarios SET nome = :nome, login = :login, senha = :senha WHERE id = :id");
+    $stmt = $con->prepare("UPDATE usuarios SET nome = :nome, login = :login, sorte = :sorte WHERE id = :id");
     $stmt->bindParam(':id', $id);
     $stmt->bindParam(':login', $login);
     $stmt->bindParam(':nome', $nome);
-    $stmt->bindParam(':senha', $senha);
+    $stmt->bindParam(':sorte', $sorte);
     return $stmt->execute();
 }
 
