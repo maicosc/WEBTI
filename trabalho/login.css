@@ -1,0 +1,35 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f2f;
+    color: aliceblue;
+}
+h2{
+   
+    font-size: 36px;
+    position: relative;
+   
+    color: red;
+    
+}
+
+input {
+    position: relative;
+    left: 35%;
+    transform: translateX(-35%);
+}
+label {
+    position: relative;
+    left: 5%;
+    transform: translateX(-5%);
+}
+input[value='Entrar']{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 1rem;
+    background-color: red;
+    color: aliceblue;
+    font-size: 24px;
+}
