@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+        }
+        .box{
+            display: flex;
+            position: fixed;
+            width: 100%;
+            background-color: rgb(129, 192, 34);
+            left: 0;
+            font-weight: bold;
+            
+        }
+        #box1{
+            top: 0;
+            height: 20%;
+            padding: 1rem;
+        }
+        #box2{
+            height: 60%;
+            background-color: white;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+        }
+        #box3{
+            bottom: 0;
+            height: 20%;
+            padding: 1rem;
+        }
+        .subBox{
+            position: relative;
+            height: 100%;
+            top: 0;
+            padding: 1rem;
+            font-weight: bold;
+        }
+        #subBox1{
+            
+            width: 70%;
+            left: 0;
+            
+        }
+        #subBox2{
+            
+            width: 15%;
+            background-color: rgb(244, 239, 196);
+        }
+        #subBox3{
+            
+            width: 15%;
+            right: 0;
+            background-color: rgb(142, 195, 177);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">Header</div>
+    <div class="box" id="box2">
+        <div class="subBox" id="subBox1">Article</div>
+        <div class="subBox" id="subBox2">Aside</div>
+        <div class="subBox" id="subBox3">Nav</div>
+    </div>
+    <div class="box" id="box3">Footer</div>
+</body>
+</html>
